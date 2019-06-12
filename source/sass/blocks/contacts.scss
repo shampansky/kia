@@ -1,0 +1,132 @@
+.contacts {
+  position: relative;
+}
+
+.contacts__map-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.contacts__map {
+  width: 100%;
+  height: 375px;
+}
+
+.contacts__info {
+  width: $mobile-width;
+  padding: 10px $mobile-padding 53px;
+
+  margin: 0 auto;
+
+  background-color: #c51230;
+  color: #ffffff;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__phone {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts__input-phone {
+  width: 100%;
+  padding: 12px 24px;
+  margin-bottom: 15px;
+
+  font-family: "KIAM", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+
+  border: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.contacts__input-phone::placeholder {
+  font-size: 14px;
+  line-height: 20px;
+  color: #ff9393;
+}
+
+.contacts__button {
+  width: 100%;
+  padding: 12px 5px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__map-wrapper {
+    width: $tablet-width;
+  }
+
+  .contacts__info {
+    width: $tablet-width;
+    padding: 20px $tablet-padding 53px;
+  }
+
+  .contacts__order-call {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__input-phone {
+    width: 292px;
+    margin-bottom: 0;
+  }
+
+  .contacts__button {
+    width: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__map-wrapper {
+    width: $desktop-width;
+  }
+
+  .contacts__map {
+    width: 944px;
+  }
+
+  .contacts__info {
+    position: absolute;
+    left: 53%;
+    top: 27px;
+
+    width: 47%;
+    padding: 25px 32px 53px;
+  }
+
+  .contacts__order-call {
+    flex-direction: column;
+  }
+
+  .contacts__input-phone {
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,62 @@
+.modal {
+  display: none;
+  width: $mobile-width;
+  padding: 30px 15px 20px;
+
+  background-color: #ffffff;
+}
+
+.modal__title {
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal__phone {
+  width: 100%;
+  padding: 15px 5px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #8d8d8d;
+  text-align: center;
+
+  border: 1px solid #8d8d8d;
+}
+
+.modal__button {
+  width: 100%;
+  padding: 13px 5px;
+  margin-bottom: 10px;
+}
+
+.modal__phone::placeholder {
+  font-family: "KIAM", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #8d8d8d;
+}
+
+.modal__disclaimer {
+  margin: 0;
+
+  font-size: 10px;
+  line-height: 12px;
+  color: #d8d8d8;
+  text-align: center;
+}
+
+
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 426px;
+
+    padding: 54px 66px 34px;
+  }
+}

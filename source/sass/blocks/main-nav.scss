@@ -1,0 +1,78 @@
+.main-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: none;
+  padding: 20px;
+  padding-bottom: 36px;
+
+  color: #ffffff;
+  background-color: $accent-color;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main-nav__header {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.main-nav__cars-list {
+  @include reset-list-style;
+
+  margin: 0;
+  margin-top: 22px;
+}
+
+.main-nav__item {
+  max-width: 154px;
+
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.main-nav__item a {
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: all 0.4s ease 0s;
+}
+
+.main-nav__item a:hover {
+  color: #cd7f7f;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 550px;
+  }
+
+  .main-nav__cars-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    position: static;
+
+    width: auto;
+    display: block;
+    padding: 0 0 36px 0;
+
+    box-shadow: none;
+  }
+
+  .main-nav__header {
+    position: relative;
+    top: -24px;
+
+    letter-spacing: 1px;
+  }
+}

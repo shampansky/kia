@@ -1,0 +1,265 @@
+.page-header {
+  position: relative;
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.page-header__top-wrapper {
+  position: relative;
+  width: $mobile-width;
+  margin: 0 auto;
+}
+
+.page-header__primary {
+  display: flex;
+  flex-direction: column;
+  padding: 22px $mobile-padding;
+
+  background-color: $accent-color;
+}
+
+.page-header__logo {
+  margin-right: 98px;
+}
+
+.page-header__address {
+  position: relative;
+
+  margin: 0;
+  margin-top: 27px;
+  padding-left: 23px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.page-header__address br {
+  display: none;
+}
+
+.page-header__address::before {
+  content: "";
+
+  position: absolute;
+  left: -5px;
+  top: -5px;
+
+  width: 17px;
+  height: 25px;
+
+  background-image: url("../img/icon-address.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__logo img {
+  display: block;
+}
+
+.page-header__secondary {
+  display: none;
+}
+
+.page-header__promo {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+  padding-bottom: 15px;
+
+  background-color: $accent-color;
+}
+
+.page-header__promo-text {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.page-header__promo-text b {
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.page-header__promo-button {
+  width: 100%;
+  padding: 20px 10px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-header__bottom-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding: 0 $mobile-padding;
+}
+
+.page-header__nav {
+  background-color: $accent-color;
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 12px;
+  right: 13px;
+
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin: 0;
+  padding: 7px;
+
+  background-color: transparent;
+
+  border: none;
+  cursor: pointer;
+}
+
+.page-header--closed .page-header__toggle {
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-header--opened .page-header__toggle {
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    width: $tablet-width;
+    margin-bottom: 80px;
+  }
+
+  .page-header__top-wrapper {
+    width: $tablet-width;
+  }
+
+  .page-header__primary {
+    flex-direction: row;
+    padding: 22px $tablet-padding;
+  }
+
+  .page-header__address::before {
+    content: "";
+
+    top: 1px;
+  }
+
+  .page-header__address br {
+    display: inline;
+  }
+
+  .page-header__promo {
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+    padding-bottom: 30px;
+  }
+
+  .page-header__promo-text {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  .page-header__promo-text b {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .page-header__promo-button {
+    width: 282px;
+  }
+
+  .page-header__bottom-wrapper {
+    width: $tablet-width;
+    padding: 0 $tablet-padding;
+  }
+
+  .page-header__toggle {
+    right: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    margin: 0;
+    margin-bottom: 60px;
+    width: auto;
+    background: linear-gradient(to right, $accent-color 35%, transparent 35%);
+  }
+
+  .page-header__top-wrapper {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+    display: flex;
+  }
+
+  .page-header__primary {
+    width: 508px;
+    padding: 22px 0 30px;
+  }
+
+  .page-header__secondary {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 670px;
+    padding-left: 30px;
+  }
+
+  .page-header__promo-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .page-header__promo {
+    position: relative;
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 $desktop-padding;
+    padding-bottom: 0;
+    min-height: 421px;
+  }
+
+  .page-header__promo-image {
+    position: absolute;
+    left: 460px;
+    top: 0;
+  }
+
+  .page-header__promo-text {
+    position: relative;
+    //z-index: 10;
+
+    padding-top: 52px;
+  }
+
+  .page-header__bottom-wrapper {
+    width: $desktop-width;
+    padding: 0 $desktop-padding;
+    display: flex;
+  }
+
+  .page-header__nav {
+    width: 508px;
+  }
+
+  .page-header__credit {
+    width: 670px;
+    align-self: flex-end;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}

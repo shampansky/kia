@@ -1,0 +1,75 @@
+.credit__text {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.credit__text span {
+  display: block;
+
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.credit__phone {
+  width: 100%;
+  padding: 13px 24px;
+  margin-bottom: 15px;
+
+  font-family: "KIAM", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  border: 1px solid #d0d0d0;
+}
+
+.credit__phone::placeholder {
+  font-family: "KIAM", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #939393;
+}
+
+.credit__button {
+  width: 100%;
+
+  font-size: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .credit__text {
+    margin: 0;
+    margin-bottom: 36px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .credit__text span {
+    margin-bottom: 10px;
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .credit__form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .credit__phone {
+    width: 295px;
+    margin-bottom: 0;
+  }
+
+  .credit__button {
+    width: 295px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .credit {
+    padding-left: 42px;
+  }
+}
